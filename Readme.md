@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Darya Kochubey](https://up.htmlacademy.ru/adaptive/15/user/693173).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Мирзоян](https://htmlacademy.ru/profile/id302093).
 
 ---
 
