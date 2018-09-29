@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи - форма</title>
+  </head>
+  <body>
+      <header class="page-header">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-header__logo">
+            <img class="page-header__logo-image page-header__logo-image--hover page-header__logo-image--down"
+            src="http://placehold.it/150x100" alt="Логотип">
+            <h1>Cat energy</h1>
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Отрыть меню</button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--active site-list__item--hover site-list__item--down">
+                  <a href="#">Главная</a>
+                </li>
+                <li class="site-list__item site-list__item--active site-list__item--hover site-list__item--down">
+                  <a href="catalog.html">Каталог продукции</a>
+                </li>
+                <li class="site-list__item site-list__item--active site-list__item--hover site-list__item--down">
+                  <a href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
+          <h1 class="order-form__title">Подбор программы</h1>
+          <p class="order-form__text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+          <div class="order-form__wrapper">
+            <label>
+                Имя:*
+                <input class="order-form__textfield order-form__tetxfield--hover order-form__textfield--active order-form__textfield--error"
+                name="name"
+                type="text"
+                value="Барсик">
+            </label>
+            <label>
+                Вес (кг):*
+                <input class="order-form__textfield order-form__tetxfield--hover order-form__textfield--active order-form__textfield--error"
+                name="weight"
+                type="number"
+                value="7">
+            </label>
+            <label>
+                Возраст (лет):
+                <input class="order-form__textfield order-form__tetxfield--hover order-form__textfield--active order-form__textfield--error"
+                name="age"
+                type="number"
+                value="7">
+            </label>
+          </div>
+          <div class="order-form__wrapper radiobutton">
+            <label>
+              <input class="radiobutton__item radiobutton__item--hover radiobutton__item--down"
+              type="radio" name="purpose"
+              value="weight loss" checked>
+              Похудение
+            </label>
+            <label>
+                <input class="radiobutton__item radiobutton__item--hover radiobutton__item--down"
+                type="radio" name="purpose" value="weight gain">
+                Набор массы
+            </label>
+            <label>
+                <input class="radiobutton__item radiobutton__item--hover radiobutton__item--down"
+                type="radio" name="purpose" value="need help">
+                Не знаю (Нужен ваш совет)
+            </label>
+          </div>
+          <div class="order-form__wrapper contact">
+            <h2 class="contact__title">Контактные данные (владелец кота)</h2>
+            <label>
+                E-mail:* <input class="order-form__textfield order-form__tetxfield--hover order-form__textfield--active order-form__textfield--error"
+                type="email"
+                value="kuklachev@gmail.com"
+                name="email">
+                Телефон:* <input class="order-form__textfield order-form__tetxfield--hover order-form__textfield--active order-form__textfield--error"
+                type="tel"
+                value="8 (960) 900-60-90"
+                name="phone number">
+            </label>
+          </div>
+          <div class="order-form__commet comment">
+            <h2 class="commet-title">Комментарий</h2>
+            <textarea name="comment" cols="40" rows="10">Расскажите обо всех повадках кота</textarea>
+          </div>
+          <div class="order-form__checkbox-field checkbox-field">
+            <h2 class="checkbox-field__title">Дополнительно</h2>
+            <label>
+              <input class="checkbox-field__item checkbox-field__item--hover checkbox-field__item--down"
+              type="checkbox"
+              name="sweetener"
+              checked>
+              Сахарозаменитель
+            </label>
+            <label>
+              <input class="checkbox-field__item checkbox-field__item--hover checkbox-field__item--down"
+              type="checkbox"
+              name="water">
+              Питьевая вода
+            </label>
+            <label>
+                <input class="checkbox-field__item checkbox-field__item--hover checkbox-field__item--down"
+                type="checkbox"
+                name="milk">
+                Молоко
+            </label>
+            <label>
+                <input class="checkbox-field__item checkbox-field__item--hover checkbox-field__item--down"
+                type="checkbox"
+                name="vitamins">
+                Витамины
+            </label>
+          </div>
+          <button class="order-form__button" type="submit">
+              Отправить заявку
+          </button>
+        </form>
+        <small class="order-form__legend">
+            <sup>*</sup> — Обязательные поля
+        </small>
+
+        <section class="contacts">
+            <b class="page-footer__title">Приглашаем  к сотрудничеству  дилеров!</b>
+            <p class="contacts__adress">
+              ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург
+            </p>
+            <iframe class="contacts__map"></iframe>
+        </section>
+
+        <footer class="page-footer">
+            <h1 class="page-footer__title">Cat Energy</h1>
+            <div class="page-footer__social-links social-links">
+              <a class="social-links__item social-links__item--active social-links__item--hover"
+              href="https://vk.com/">VK</a>
+              <a class="social-links__item social-links__item--active social-links__item--hover"
+              href="https://instagram.com">INST</a>
+              <a class="social-links__item social-links__item--active social-links__item--hover"
+              href="https://facebook.com">FB</a>
+            </div>
+            <div class="page-foter__academy academy">
+              <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <p>HTML Academy</p>
+              <img class="academy-link__logo" src="http://placehold.it/50x50" alt="Логотип HTML academy">
+              </a>
+            </div>
+        </footer>
+
+  </body>
