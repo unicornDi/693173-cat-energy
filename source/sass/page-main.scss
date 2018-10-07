@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 .functional-eating__wrapper {
-  background-image: url('../img/index-background-mobile@1x.jpg');
+  background-image: url("../img/index-background-mobile@1x.jpg");
   min-height: 305px;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
 
 .functional-eating__banner {
   height: 305px;
-  background-image: url('../img/index-can-mobile@1x.png');
+  background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
   margin-top: -140px;
 }

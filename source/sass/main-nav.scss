@@ -1,7 +1,7 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 .main-nav__wrapper {
   display: flex;
@@ -20,7 +20,6 @@
   height: 65px;
   width: 320px;
   border-top: 1px solid $light-grey;
-
 }
 
 .nav__link {
@@ -31,6 +30,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Oswald Medium;
+  font-family: "Oswald Medium";
   font-size: 20px;
 }
