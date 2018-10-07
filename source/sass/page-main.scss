@@ -2,11 +2,13 @@
   width: 320px;
   margin: 0 auto;
 }
+
 .functional-eating {
   min-height: 480px;
   display: flex;
   flex-direction: column;
 }
+
 .functional-eating__wrapper {
   background-image: url("../img/index-background-mobile@1x.jpg");
   min-height: 305px;
