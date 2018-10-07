@@ -1,0 +1,12 @@
+.page-main__product-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.product-list__list-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
