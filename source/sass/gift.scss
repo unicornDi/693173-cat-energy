@@ -1,0 +1,22 @@
+.gift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 320px;
+  height: 330px;
+  margin: 0 auto;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+}
+
+.gift__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: $white;
+  text-align: center;
+}
+
+.gift__icon {
+  background: url("../img/icon-gift.svg") no-repeat center;
+  width: 60px;
+  height: 60px;
+}

@@ -1,0 +1,24 @@
+.more-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.more-products__title {
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.more-products__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+}
+
+.more-products__expand-icon {
+  background: url("../img/icon-plus-mobile.svg") no-repeat center;
+  width: 25px;
+  height: 30px;
+}

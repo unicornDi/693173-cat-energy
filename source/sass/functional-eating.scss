@@ -1,0 +1,41 @@
+.functional-eating {
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald Regular", sans-serif;
+  color: $white;
+}
+
+.functional-eating__wrapper {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  min-height: 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white;
+}
+
+.functional-eating__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.functional-eating__motto {
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.functional-eating__banner {
+  height: 305px;
+  background-image: url("../img/index-can-mobile@1x.png");
+  background-repeat: no-repeat;
+  margin-top: -80px;
+}
+
+.functional-eating__common-button {
+  align-self: center;
+}

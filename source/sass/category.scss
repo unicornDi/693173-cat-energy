@@ -1,0 +1,26 @@
+.category {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.category__list {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.category__title {
+  font-family: "Oswald Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.category__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+  font-family: "Oswald Regular", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}

@@ -1,0 +1,30 @@
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+  background: $background-grey;
+}
+
+.page-footer__wrapper {
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__logo {
+  width: 130px;
+  height: 25px;
+}
+
+.page-footer_links-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.social-links__item {
+  width: 24px;
+  height: 12px;
+}
