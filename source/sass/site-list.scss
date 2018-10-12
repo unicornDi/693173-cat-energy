@@ -1,0 +1,25 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  height: 65px;
+  width: 320px;
+  border-top: 1px solid $light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .site-list__item {
+    border-style: none;
+    width: auto;
+  }
+}

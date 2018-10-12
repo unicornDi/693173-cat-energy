@@ -7,3 +7,27 @@
   background: url("../img/logo-mobile.svg") no-repeat 50% 0;
   height: 65px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    margin-top: 40px;
+  }
+  .page-header__logo {
+    background: url("../img/logo-tablet.svg") no-repeat center;
+    width: 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header{
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+  }
+  .page-header__logo {
+    background: url("../img/logo-desktop.svg") no-repeat center;
+  }
+}

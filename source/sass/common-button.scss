@@ -1,6 +1,15 @@
 .common-button {
   font-family: "Oswald Regular", sans-serif;
+  color: $white;
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
+  border: 2px solid green;
+  background: green;
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
