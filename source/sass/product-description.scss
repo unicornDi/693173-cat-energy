@@ -12,10 +12,10 @@
 .product-description__name {
   text-align: center;
 
-    a {
-      text-decoration: none;
-      color: $black;
-    }
+  a {
+    text-decoration: none;
+    color: $black;
+  }
 }
 
 @media (min-width: $tablet-width) {

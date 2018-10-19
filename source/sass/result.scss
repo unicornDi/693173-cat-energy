@@ -29,7 +29,7 @@
   height: 90px;
 }
 
-.result__weight:before {
+.result__weight::before {
   border: 1px solid black;
   content: "";
   width: 124px;
@@ -45,7 +45,6 @@
   align-items: center;
   justify-content: center;
   height: 90px;
-  justify-content: space-around;
 }
 
 .result__time::before {
@@ -184,6 +183,6 @@
   }
 
   .result-image__before img {
-    left: 0px;
+    left: 0;
   }
 }
