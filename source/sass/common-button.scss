@@ -4,12 +4,32 @@
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid green;
-  background: green;
+  background: $green;
   width: 280px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+.common-button--light {
+  background: $light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .common-button {
+    width: 245px;
+  }
+  .common-button--long {
+    width: 635px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .common-button {
+    width: 170px;
+  }
+  .common-button--long {
+    width: 245px;
+  }
 }

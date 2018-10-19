@@ -1,51 +1,39 @@
 .functional-eating {
-  width: 320px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   font-family: "Oswald Medium", sans-serif;
   color: $white;
+  margin-bottom: 22px;
 }
-
 .functional-eating__wrapper {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  min-height: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $white;
 }
-
 .functional-eating__title {
   font-size: 36px;
   line-height: 36px;
   margin-top: 30px;
   text-align: center;
 }
-
 .functional-eating__motto {
   font-size: 14px;
   line-height: 14px;
   margin-top: 20px;
   text-transform: uppercase;
 }
-
 .functional-eating__banner {
   height: 305px;
-  background: url("../img/index-can-mobile@1x.png") no-repeat;
+  background: url("../img/index-can-mobile@1x.png") no-repeat center top;
   width: 100%;
   margin-top: 20px;
 }
-
 .functional-eating__common-button {
   align-self: center;
   order: 1;
 }
 
 @media (min-width: $tablet-width) {
-  .functional-eating {
-    width: 708px;
-  }
   .functional-eating__wrapper {
     background: $white;
     width: auto;
@@ -81,7 +69,6 @@
 
 @media (min-width: $desktop-width) {
   .functional-eating {
-    width: 100%;
     height: 695px;
   }
   .functional-eating__wrapper {
@@ -96,10 +83,10 @@
   }
   .functional-eating__banner {
     background: url("../img/index-can-desktop@1x.png") no-repeat right;
-    background-size: 600px;
+    background-size: 500px;
     position: relative;
-    width: calc(50% + 430px);
+    width: calc(50% + 360px);
     flex-shrink: 0;
-    top: -280px;
+    top: -300px;
   }
 }

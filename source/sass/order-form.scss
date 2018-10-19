@@ -1,25 +1,70 @@
-.order-form {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .order-form__text {
   font-family: "Oswald Regular", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
-
 .order-form__wrapper {
   border-style: none;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
   border-bottom: 1px solid $light-grey;
   font-family: "Oswald Regular", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
+  padding-left: 0;
+  padding-bottom: 30px;
 }
-
+.order-form__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
 .category-title {
   font-family: "Oswald Regular", sans-serif;
   font-size: 24px;
   line-height: 24px;
+}
+.order-form__textfield {
+  height: 45px;
+  border: 1px solid $light-grey;
+  width: 65%;
+}
+.order-form__legend {
+  align-self: center;
+}
+.comment-textarea {
+  width: 100%;
+}
+::placeholder {
+  text-transform: uppercase;
+  font-family: "Oswald Regular", sans-serif;
+  color: $dark-grey;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__text {
+    width: 330px;
+  }
+  .order-form__wrapper {
+    margin-left: 40px;
+  }
+  .form-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__common-button {
+    width: 570px;
+  }
 }

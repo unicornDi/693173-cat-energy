@@ -1,0 +1,17 @@
+.checkbox-field {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border-style: none;
+}
+.checkbox-field__label {
+ height: 32px;
+ width: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-field {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}

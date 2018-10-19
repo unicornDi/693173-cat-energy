@@ -1,0 +1,12 @@
+.radiobutton {
+  height: 160px;
+  display: flex;
+}
+.radiobutton__label {
+  height: 50px;
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  border: 1px solid $light-grey;
+}

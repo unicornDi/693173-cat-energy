@@ -4,8 +4,8 @@ body {
   padding: 0;
   line-height: 18px;
   background-color: $white;
+  font-family: "Oswald Regular", sans-serif;
 }
-
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -14,9 +14,7 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
