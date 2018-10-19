@@ -3,6 +3,7 @@
   margin: 0 auto;
   font-family: "Oswald Medium", sans-serif;
 }
+
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
@@ -10,6 +11,7 @@
   align-items: center;
   text-align: center;
 }
+
 .nav__link {
   text-decoration: none;
   color: $black;
@@ -26,6 +28,7 @@
     width: auto;
     margin: 0;
   }
+
   .main-nav__wrapper {
     display: flex;
     width: 490px;

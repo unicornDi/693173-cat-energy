@@ -12,6 +12,7 @@
   align-items: center;
   flex-shrink: 0;
 }
+
 .common-button--light {
   background: $light-grey;
 }
@@ -20,6 +21,7 @@
   .common-button {
     width: 245px;
   }
+
   .common-button--long {
     width: 635px;
   }
@@ -29,6 +31,7 @@
   .common-button {
     width: 170px;
   }
+
   .common-button--long {
     width: 245px;
   }

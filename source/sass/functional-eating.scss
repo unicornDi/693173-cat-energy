@@ -3,6 +3,7 @@
   color: $white;
   margin-bottom: 22px;
 }
+
 .functional-eating__wrapper {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
   display: flex;
@@ -10,24 +11,28 @@
   align-items: center;
   color: $white;
 }
+
 .functional-eating__title {
   font-size: 36px;
   line-height: 36px;
   margin-top: 30px;
   text-align: center;
 }
+
 .functional-eating__motto {
   font-size: 14px;
   line-height: 14px;
   margin-top: 20px;
   text-transform: uppercase;
 }
+
 .functional-eating__banner {
   height: 305px;
   background: url("../img/index-can-mobile@1x.png") no-repeat center top;
   width: 100%;
   margin-top: 20px;
 }
+
 .functional-eating__common-button {
   align-self: center;
   order: 1;
@@ -40,6 +45,7 @@
     align-items: flex-start;
     color: $black;
   }
+
   .functional-eating__title {
     text-align: left;
     width: 448px;
@@ -47,18 +53,21 @@
     line-height: 60px;
     margin-top: 30px;
   }
+
   .functional-eating__motto {
     text-align: left;
     margin-top: 45px;
     font-size: 20px;
     line-height: 20px;
   }
+
   .functional-eating__banner {
     background: url("../img/index-can-tablet@1x.jpg") no-repeat;
     height: 540px;
     margin-top: -60px;
     background-position-x: -50px;
   }
+
   .functional-eating__common-button {
     order: 0;
     z-index: 1;
@@ -71,6 +80,7 @@
   .functional-eating {
     height: 695px;
   }
+
   .functional-eating__wrapper {
     margin-top: 110px;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat right;
@@ -78,9 +88,11 @@
     margin: 0;
     margin-left: 105px;
   }
+
   .functional-eating__title {
     margin-top: 160px;
   }
+
   .functional-eating__banner {
     background: url("../img/index-can-desktop@1x.png") no-repeat right;
     background-size: 500px;
