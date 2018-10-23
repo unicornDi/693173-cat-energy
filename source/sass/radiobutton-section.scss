@@ -3,6 +3,7 @@
   border-top: 1px solid $light-grey;
   border-bottom: 1px solid $light-grey;
 }
+
 .radiobutton {
   position: relative;
   padding-left: 35px;
@@ -32,13 +33,13 @@
   border-radius: 50%;
 }
 
-.radiobutton__styled-button:after {
+.radiobutton__styled-button::after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.radiobutton .radiobutton__styled-button:after {
+.radiobutton .radiobutton__styled-button::after {
   top: 7px;
   left: 7px;
   width: 12px;
@@ -47,11 +48,11 @@
   background: $green;
 }
 
-.radiobutton:hover > .radiobutton__styled-button:after {
+.radiobutton:hover > .radiobutton__styled-button::after {
   display: block;
 }
 
-.radiobutton__item:checked ~ .radiobutton__styled-button:after {
+.radiobutton__item:checked ~ .radiobutton__styled-button::after {
   display: block;
 }
 

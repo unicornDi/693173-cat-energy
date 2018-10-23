@@ -93,12 +93,13 @@
 
 @media (min-width: $tablet-width) {
   .result {
-    background: linear-gradient(to bottom, white 0%, white 50%, #ffffff 50%,
-                $background-grey 50%, $background-grey 100%);
+    background: linear-gradient(to bottom, white 0%, white 50%, #ffffff 50%, $background-grey 50%, $background-grey 100%);
   }
+
   .result-title {
     min-width: 708px;
   }
+
   .result-container {
     min-width: 708px;
   }
@@ -166,6 +167,7 @@
     margin-left: 110px;
     margin-bottom: 70px;
   }
+
   .result-title {
     width: 100%;
     background: $white;
