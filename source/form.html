@@ -17,7 +17,7 @@
         </div>
       </a>
       <nav class="main-nav">
-        <!-- <button class="main-nav__toggle" type="button">Отрыть меню</button> -->
+        <button class="visually-hidden main-nav__toggle" type="button">Отрыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active site-list__item--down">
@@ -36,7 +36,7 @@
 
     <form class="order-form container" action="https://echo.htmlacademy.ru" method="post">
       <h3 class="section-title">Подбор программы</h3>
-      <fieldset class="order-form__wrapper">
+      <fieldset class="order-form__wrapper questionnaire">
         <p class="order-form__text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
         <label class="order-form__label">
           Имя:*
@@ -60,7 +60,7 @@
           value="7">
         </label>
       </fieldset>
-      <fieldset class="order-form__wrapper radiobutton">
+      <fieldset class="order-form__wrapper radiobutton-section">
         <label class="radiobutton">
           Похудение
           <input class="radiobutton__item radiobutton__item--down"
@@ -81,63 +81,69 @@
           <span class="radiobutton__styled-button"></span>
         </label>
       </fieldset>
-      <fieldset class="order-form__wrapper contact">
-        <legend class="category-title">Контактные данные (владелец кота)</legend>
-        <label class="order-form__label">
-          E-mail:* <input class="order-form__textfield order-form__textfield--active order-form__textfield--error"
+      <fieldset class="order-form__wrapper form-contact">
+        <legend class="category-title contact-title">Контактные данные (владелец кота)</legend>
+        <label class="order-form__label contact-label">
+          E-mail:* <input class="contact__textfield contact__textfield--mail order-form__textfield order-form__textfield--active order-form__textfield--error"
           type="email"
           value="kuklachev@gmail.com"
           name="email">
         </label>
-        <label class="order-form__label">
-          Телефон:* <input class="order-form__textfield order-form__textfield--active order-form__textfield--error"
+        <label class="order-form__label contact-label">
+          Телефон:* <input class="contact__textfield contact__textfield--phone order-form__textfield order-form__textfield--active order-form__textfield--error"
           type="tel"
           value="8 (960) 900-60-90"
           name="phone number">
         </label>
       </fieldset>
       <fieldset class="order-form__wrapper comment">
-        <h4 class="category-title">Комментарий</h4>
+        <legend class="category-title">Комментарий</legend>
         <textarea class="comment-textarea" name="comment" cols="40" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="checkbox-field">
-        <h4 class="category-title">Дополнительно</h4>
-        <label class="checkbox-field__label">
-          <input class="checkbox-field__item checkbox-field__item--down"
+      <fieldset class="checkbox-section">
+        <legend class="category-title">Дополнительно</legend>
+        <div class="checkbox__wrapper">
+        <label class="checkbox">
+          <span>Сахарозаменитель</span>
+          <input class="checkbox__item checkbox__item--down"
           type="checkbox"
           name="sweetener"
           checked>
-          Сахарозаменитель
+          <span class="checkbox--styled"></span>
         </label>
-        <label class="checkbox-field__label">
-          <input class="checkbox-field__item checkbox-field__item--down"
+        <label class="checkbox">
+          <span>Питьевая вода</span>
+          <input class="checkbox__item checkbox__item--down"
           type="checkbox"
           name="water">
-          Питьевая вода
+          <span class="checkbox--styled"></span>
         </label>
-        <label class="checkbox-field__label">
-          <input class="checkbox-field__item checkbox-field__item--down"
+        <label class="checkbox">
+          <span>Молоко</span>
+          <input class="checkbox__item checkbox__item--down"
           type="checkbox"
           name="milk">
-          Молоко
+          <span class="checkbox--styled"></span>
         </label>
-        <label class="checkbox-field__label">
-          <input class="checkbox-field__item checkbox-field__item--down"
+        <label class="checkbox">
+          <span>Витамины</span>
+          <input class="checkbox__item checkbox__item--down"
           type="checkbox"
           name="vitamins">
-          Витамины
+          <span class="checkbox--styled"></span>
         </label>
+      </div>
       </fieldset>
       <div class="form-wrapper">
         <button class="order-form__common-button common-button common-button--down"
           type="submit">
           Отправить заявку
         </button>
-      </div>
-    </form>
-    <small class="order-form__legend">
+        <small class="order-form__legend">
       <sup>*</sup> — Обязательные поля
     </small>
+      </div>
+    </form>
 
     <section class="contacts">
       <header class="contacts__header">

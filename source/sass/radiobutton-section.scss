@@ -1,19 +1,15 @@
-// .radiobutton {
-//   height: 160px;
-//   display: flex;
-// }
-
+.radiobutton-section {
+  padding-top: 40px;
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+}
 .radiobutton {
-  display: block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  padding-bottom: 20px;
 }
 
 /* Hide the browser's default radio button */
@@ -54,9 +50,14 @@
 .radiobutton:hover > .radiobutton__styled-button:after {
   display: block;
 }
+
 .radiobutton__item:checked ~ .radiobutton__styled-button:after {
   display: block;
 }
+
 @media (min-width: $tablet-width) {
-  border: 1px solid $light-grey;
+  .radiobutton-section {
+    border: 1px solid $light-grey;
+    padding-left: 28px;
+  }
 }
