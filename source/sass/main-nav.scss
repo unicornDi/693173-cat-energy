@@ -1,7 +1,7 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
-  font-family: "Oswald Medium", sans-serif;
+  font-family: "Oswald Regular", sans-serif;
 }
 
 .main-nav__wrapper {
@@ -38,5 +38,8 @@
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
     width: 600px;
+  }
+  .nav__link--white {
+    color: $white;
   }
 }

@@ -5,11 +5,14 @@
 }
 
 .functional-eating__wrapper {
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background:  url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center top;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $white;
+  min-height: 470px;
 }
 
 .functional-eating__title {
@@ -26,21 +29,16 @@
   text-transform: uppercase;
 }
 
-.functional-eating__banner {
-  height: 305px;
-  background: url("../img/index-can-mobile@1x.png") no-repeat center top;
-  width: 100%;
-  margin-top: 20px;
-}
-
 .functional-eating__common-button {
   align-self: center;
-  order: 1;
 }
 
 @media (min-width: $tablet-width) {
   .functional-eating__wrapper {
-    background: $white;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    background-size: contain;
+    background-position: -10px 300px;
+    min-height: 840px;
     width: auto;
     align-items: flex-start;
     color: $black;
@@ -52,6 +50,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 30px;
+    margin-left: 75px;
   }
 
   .functional-eating__motto {
@@ -59,45 +58,35 @@
     margin-top: 45px;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  .functional-eating__banner {
-    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
-    height: 540px;
-    margin-top: -60px;
-    background-position-x: -50px;
+    margin-left: 75px;
   }
 
   .functional-eating__common-button {
-    order: 0;
-    z-index: 1;
     align-self: flex-start;
-    margin-top: 40px;
+    position: relative;
+    bottom: 520px;
+    left: 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .functional-eating {
-    height: 695px;
+    min-height: 695px;
   }
 
   .functional-eating__wrapper {
-    margin-top: 110px;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat right;
-    background-size: 50% 100%;
-    margin-left: 105px;
+    background: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 450px, 50% 100%;
+    background-position: bottom center, right top;
+    min-height: 695px;
   }
 
   .functional-eating__title {
     margin-top: 160px;
   }
-
-  .functional-eating__banner {
-    background: url("../img/index-can-desktop@1x.png") no-repeat right;
-    background-size: 500px;
-    position: relative;
-    width: calc(50% + 360px);
-    flex-shrink: 0;
-    top: -300px;
+  .functional-eating__common-button {
+    bottom: 260px;
+    width: 245px;
   }
 }

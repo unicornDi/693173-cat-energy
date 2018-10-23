@@ -3,14 +3,14 @@
   margin: 0 auto;
 }
 
-.container--flex {
+.container--flex-column {
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    max-width: 708px;
+    min-width: 708px;
   }
 }
 

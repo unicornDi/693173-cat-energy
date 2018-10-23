@@ -6,9 +6,15 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header--static container container--full-width">
+    <header class="page-header page-header--static container container--flex-column container--full-width">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-header__logo">
-        <div class="page-header__logo page-header__logo--down"></div>
+        <div class="page-header__logo page-header__logo--hover page-header__logo--down">
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип">
+          </picture>
+        </div>
       </a>
       <nav class="main-nav">
         <!-- <button class="main-nav__toggle" type="button">Отрыть меню</button> -->
@@ -55,25 +61,28 @@
         </label>
       </fieldset>
       <fieldset class="order-form__wrapper radiobutton">
-        <label class="radiobutton__label">
+        <label class="radiobutton">
+          Похудение
           <input class="radiobutton__item radiobutton__item--down"
-            type="radio" name="purpose"
-            value="weight loss" checked>
-            Похудение
+          type="radio" name="purpose"
+          value="weight loss" checked>
+          <span class="radiobutton__styled-button"></span>
         </label>
-        <label class="radiobutton__label">
+        <label class="radiobutton">
+          Набор массы
           <input class="radiobutton__item radiobutton__item--down"
           type="radio" name="purpose" value="weight gain">
-          Набор массы
+          <span class="radiobutton__styled-button"></span>
         </label>
-        <label class="radiobutton__label">
+        <label class="radiobutton">
+          Не знаю (Нужен ваш совет)
           <input class="radiobutton__item radiobutton__item--down"
           type="radio" name="purpose" value="need help">
-          Не знаю (Нужен ваш совет)
+          <span class="radiobutton__styled-button"></span>
         </label>
       </fieldset>
       <fieldset class="order-form__wrapper contact">
-        <h4 class="category-title">Контактные данные (владелец кота)</h4>
+        <legend class="category-title">Контактные данные (владелец кота)</legend>
         <label class="order-form__label">
           E-mail:* <input class="order-form__textfield order-form__textfield--active order-form__textfield--error"
           type="email"
