@@ -1,9 +1,29 @@
-.page-header {
-  display: flex;
-  flex-direction: column;
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    margin-top: 40px;
+  }
+
+  .page-header__logo {
+    min-width: 180px;
+  }
 }
 
-.page-header__logo {
-  background: url("../img/logo-mobile.svg") no-repeat 50% 0;
-  height: 65px;
+@media (min-width: $desktop-width) {
+  .page-header {
+    justify-content: space-between;
+    position: absolute;
+    color: $white;
+  }
+
+  .page-header__logo {
+    width: 245px;
+    margin-left: 25px;
+  }
+
+  .page-header--static {
+    position: static;
+  }
 }

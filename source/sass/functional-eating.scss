@@ -1,18 +1,18 @@
 .functional-eating {
-  min-height: 480px;
-  display: flex;
-  flex-direction: column;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: "Oswald Medium", sans-serif;
   color: $white;
+  margin-bottom: 22px;
 }
 
 .functional-eating__wrapper {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  min-height: 305px;
+  background: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center top;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $white;
+  min-height: 470px;
 }
 
 .functional-eating__title {
@@ -29,13 +29,65 @@
   text-transform: uppercase;
 }
 
-.functional-eating__banner {
-  height: 305px;
-  background-image: url("../img/index-can-mobile@1x.png");
-  background-repeat: no-repeat;
-  margin-top: -80px;
-}
-
 .functional-eating__common-button {
   align-self: center;
+}
+
+@media (min-width: $tablet-width) {
+  .functional-eating__wrapper {
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    background-size: contain;
+    background-position: -10px 300px;
+    min-height: 840px;
+    width: auto;
+    align-items: flex-start;
+    color: $black;
+  }
+
+  .functional-eating__title {
+    text-align: left;
+    width: 448px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 30px;
+    margin-left: 75px;
+  }
+
+  .functional-eating__motto {
+    text-align: left;
+    margin-top: 45px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 75px;
+  }
+
+  .functional-eating__common-button {
+    align-self: flex-start;
+    position: relative;
+    bottom: 520px;
+    left: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .functional-eating {
+    min-height: 695px;
+  }
+
+  .functional-eating__wrapper {
+    background: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 450px, 50% 100%;
+    background-position: bottom center, right top;
+    min-height: 695px;
+  }
+
+  .functional-eating__title {
+    margin-top: 160px;
+  }
+
+  .functional-eating__common-button {
+    bottom: 260px;
+    width: 245px;
+  }
 }

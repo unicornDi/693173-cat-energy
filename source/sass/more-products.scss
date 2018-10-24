@@ -1,11 +1,3 @@
-.more-products {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-}
-
 .more-products__title {
   font-family: "Oswald Regular", sans-serif;
   font-size: 16px;
@@ -21,4 +13,5 @@
   background: url("../img/icon-plus-mobile.svg") no-repeat center;
   width: 25px;
   height: 30px;
+  margin-top: 20px;
 }
