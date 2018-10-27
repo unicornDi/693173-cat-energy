@@ -1,17 +1,24 @@
+.order-form {
+  font-family: $oswald-regular;
+}
 .order-form__text {
-  font-family: "Oswald Regular", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.order-form__legend {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-left: 20px;
+  line-height: 24px;
+  margin-left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .order-form__wrapper {
   border-style: none;
   border-top: 3px solid $green;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  font-family: "Oswald Regular", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   padding-left: 0;
@@ -26,62 +33,93 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 24px;
+  font-size: 16px;
 }
 
 .category-title {
-  font-family: "Oswald Regular", sans-serif;
   font-size: 24px;
   line-height: 24px;
 }
 
-.order-form__textfield {
-  height: 45px;
-  border: 1px solid $light-grey;
-  width: 65%;
-  box-sizing: border-box;
-  padding: 15px;
-}
-
 .comment-textarea {
   width: 100%;
+  margin-top: 35px;
+  resize: none;
+  border: 1px solid $light-grey;
 }
 
 ::placeholder {
   text-transform: uppercase;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $oswald-regular;
   color: $dark-grey;
   padding-left: 20px;
+  padding-top: 15px;
 }
 
-.form-wrapper {
+.order-form__button-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-legend {
-  margin-bottom: 40px;
+.order-form__common-button {
+  border-style: none;
 }
 
 @media (min-width: $tablet-width) {
+  .order-form {
+    margin-top: 70px;
+  }
+
   .order-form__text {
-    width: 330px;
+    width: 325px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 60px;
+    align-self: flex-start;
+    margin-left: 30px;
   }
 
-  .order-form__wrapper {
-    margin-left: 40px;
+  .order-form__label {
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: flex-start;
   }
 
-  .form-wrapper {
+  .order-form__legend {
+    margin-left: 30px;
+  }
+
+  .order-form__button-wrapper {
     flex-direction: row;
-    justify-content: space-around;
+    margin-left: $horizontal-margin-desktop-legend;
     margin-bottom: 80px;
+    justify-content: space-between;
+    width: 50%;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form-container--row {
+    flex-direction: row;
+  }
+
   .order-form__common-button {
     width: 570px;
+  }
+
+  .order-form__legend {
+    margin-left: $horizontal-margin-desktop-legend;
+  }
+
+  .order-form__button-wrapper {
+    width: 60%;
   }
 }

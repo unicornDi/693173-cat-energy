@@ -10,24 +10,26 @@
     <header class="page-header container container--flex-column container--full-width">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="page-header__logo">
         <div class="page-header__logo page-header__logo--hover page-header__logo--down">
-        <picture>
+          <picture>
             <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Логотип">
+            <img src="img/logo-mobile.svg" alt="Логотип"  width="228">
           </picture>
+          <button class="visually-hidden main-nav__toggle" type="button">
+            <img src="img/icon-close.svg" width="23">
+          </button>
         </div>
       </a>
       <nav class="main-nav">
-        <button class="visually-hidden main-nav__toggle" type="button">Отрыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active site-list__item--down">
-              <a class="nav__link nav__link--white" href="#">Главная</a>
+            <li class="site-list__item">
+              <a class="nav__link nav__link--white nav__link--active-white" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active site-list__item--down">
+            <li class="site-list__item">
               <a class="nav__link nav__link--white" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item site-list__item--active site-list__item--down">
+            <li class="site-list__item">
               <a class="nav__link nav__link--white" href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -44,7 +46,7 @@
         </div>
         <a class="functional-eating__common-button common-button button--down"
           href="form.html">
-            Подобрать программу
+            <span>Подобрать программу</span>
           </a>
       </section>
 

@@ -1,5 +1,5 @@
 .common-button {
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $oswald-regular;
   color: $white;
   font-size: 14px;
   text-transform: uppercase;
@@ -11,10 +11,27 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  cursor: pointer;
+}
+.common-button:hover {
+  background-color: $green-hvr;
+}
+
+.common-button:active span {
+  opacity: 0.4;
 }
 
 .common-button--light {
   background: $light-grey;
+  color: $dark-grey;
+}
+
+.common-button--light:hover {
+  background: $grey-hvr;
+}
+
+.common-button--light:active span {
+  opacity: 0.4;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,13 +1,23 @@
+.page-header__logo:hover {
+  opacity: 0.9;
+}
+
+.page-header__logo:active {
+  opacity: 0.7;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;
     justify-content: space-around;
     height: 100px;
     margin-top: 40px;
+    align-items: center;
   }
 
   .page-header__logo {
     min-width: 180px;
+    margin-right: 80px;
   }
 }
 

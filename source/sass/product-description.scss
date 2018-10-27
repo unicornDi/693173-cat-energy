@@ -58,3 +58,13 @@
     top: -110px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-description__image--small {
+    top: -90px;
+  }
+
+  .product-description__image--big {
+    top: -130px;
+  }
+}
