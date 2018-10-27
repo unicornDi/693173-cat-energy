@@ -6,6 +6,7 @@
 
 .functional-eating__wrapper {
   background: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-color: $green;
   background-repeat: no-repeat;
   background-position: center bottom, center top;
   display: flex;
@@ -77,9 +78,9 @@
   .functional-eating__wrapper {
     background: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 450px, 50% 100%;
-    background-position: bottom center, right top;
+    background-size: 600px, 50% 100%;
     min-height: 695px;
+    background-position: calc(50% + 131px) 180px, right top;
   }
 
   .functional-eating__title {

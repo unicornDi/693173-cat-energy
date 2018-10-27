@@ -1,7 +1,8 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
-  font-family: $oswald-regular;
+  font-family: $oswald-medium;
+  text-transform: uppercase;
 }
 
 .main-nav__wrapper {
@@ -54,6 +55,10 @@
   .nav__link--active-green {
     border-bottom: 2px solid $green;
   }
+
+  .nav__link--active-main-page {
+    border-bottom: 2px solid $green;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -71,5 +76,9 @@
 
   .nav__link--active-green {
     border-bottom: 2px solid $green;
+  }
+
+  .nav__link--active-main-page {
+    border-bottom: 2px solid $white;
   }
 }
