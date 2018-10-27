@@ -16,6 +16,25 @@
 .result__stats {
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
+}
+
+.result__stats-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 365px;
+  justify-content: space-between;
+}
+
+.stats-list__item {
+  border: 1px solid $border-hvr;
+  border-radius: 5px;
+  max-width: 124px;
+  width: 100%;
+  padding: 15px 10px 5px;
+  text-align: center;
 }
 
 .result__wrapper {
@@ -24,40 +43,17 @@
   margin-top: 25px;
 }
 
-.result__weight {
+.stats-list__wrapper {
+  max-width: 110px;
+  padding: 0 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -30px;
+  background: $background-grey;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 124px;
-  height: 90px;
-}
-
-.result__weight::before {
-  border: 1px solid black;
-  content: "";
-  width: 124px;
-  height: 70px;
-  position: absolute;
-  display: block;
-}
-
-.result__time {
-  display: flex;
-  flex-direction: column;
-  width: 124px;
-  align-items: center;
-  height: 90px;
-  justify-content: space-around;
-}
-
-.result__time::before {
-  border: 1px solid black;
-  content: "";
-  width: 124px;
-  height: 70px;
-  position: absolute;
-  display: block;
 }
 
 .result__number {
@@ -70,14 +66,15 @@
   font-family: $arial;
   font-size: 12px;
   line-height: 12px;
-  width: 60px;
   text-align: center;
+  width: 110px;
 }
 
 .result__cost {
   font-family: $oswald-regular;
   font-size: 14px;
   line-height: 20px;
+  margin-top: 20px;
   align-self: center;
   text-transform: uppercase;
 }
@@ -102,6 +99,7 @@
 
   .result-container {
     min-width: 708px;
+    margin-top: 70px;
   }
 
   .result-description__text {
@@ -111,6 +109,10 @@
   .result__stats {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .stats-list__wrapper {
+    background: $white;
   }
 
   .result__cost {
@@ -197,6 +199,10 @@
   .result__stats {
     flex-direction: column;
     height: 160px;
+  }
+
+  .stats-list__wrapper {
+    background: $background-grey;
   }
 
   .result__cost {
