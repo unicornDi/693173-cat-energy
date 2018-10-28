@@ -67,7 +67,7 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  width: 110px;
+  width: 80px;
 }
 
 .result__cost {
@@ -118,6 +118,10 @@
   .result__cost {
     display: flex;
     flex-direction: column;
+  }
+
+.result__text {
+    width: 110px;
   }
 
   .result__wrapper {
