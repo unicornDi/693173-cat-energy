@@ -8,17 +8,25 @@
 .checkbox__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  margin-top: 34px;
+  margin-left: 20px;
 }
 
 .checkbox {
   position: relative;
-  padding-left: 35px;
+  padding-left: $checkbox-padding-left;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
   padding-bottom: 20px;
   display: flex;
   align-items: center;
+  height: 30px;
+}
+
+.checkbox__name {
+  margin-left: 20px;
 }
 
 .checkbox input {
@@ -70,17 +78,25 @@
   .checkbox__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 500px;
   }
 
   .checkbox {
-    width: 160px;
+    width: calc(50% - #{$checkbox-padding-left});
   }
 }
 
 @media (min-width: $desktop-width) {
   .checkbox__wrapper {
     width: 100%;
+    padding-left: 20px;
     justify-content: space-between;
+    margin-left: $horizontal-margin-desktop-legend;
+    margin-right: $horizontal-margin-desktop-legend;
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+    width: calc(25% - #{$checkbox-padding-left});
   }
 }

@@ -1,7 +1,8 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
-  font-family: "Oswald Regular", sans-serif;
+  font-family: $oswald-medium;
+  text-transform: uppercase;
 }
 
 .main-nav__wrapper {
@@ -23,6 +24,23 @@
   font-size: 20px;
 }
 
+.nav__link:hover {
+  opacity: 0.6;
+}
+
+.nav__link:active {
+  opacity: 0.2;
+}
+
+.main-nav__toggle {
+  background: none;
+  border: none;
+  position: relative;
+  top: -40px;
+  right: -290px;
+  width: 24px;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     width: auto;
@@ -33,6 +51,14 @@
     display: flex;
     width: 490px;
   }
+
+  .nav__link--active-green {
+    border-bottom: 2px solid $green;
+  }
+
+  .nav__link--active-main-page {
+    border-bottom: 2px solid $green;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -42,5 +68,17 @@
 
   .nav__link--white {
     color: $white;
+  }
+
+  .nav__link--active-white {
+    border-bottom: 2px solid $white;
+  }
+
+  .nav__link--active-green {
+    border-bottom: 2px solid $green;
+  }
+
+  .nav__link--active-main-page {
+    border-bottom: 2px solid $white;
   }
 }

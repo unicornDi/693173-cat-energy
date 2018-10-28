@@ -1,5 +1,5 @@
 .functional-eating {
-  font-family: "Oswald Medium", sans-serif;
+  font-family: $oswald-medium;
   color: $white;
   margin-bottom: 22px;
 }
@@ -77,9 +77,9 @@
   .functional-eating__wrapper {
     background: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 450px, 50% 100%;
-    background-position: bottom center, right top;
+    background-size: 600px, 50% 100%;
     min-height: 695px;
+    background-position: calc(50% + 131px) 180px, right top;
   }
 
   .functional-eating__title {
