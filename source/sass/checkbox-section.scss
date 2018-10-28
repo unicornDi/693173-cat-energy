@@ -88,6 +88,7 @@
 @media (min-width: $desktop-width) {
   .checkbox__wrapper {
     width: 100%;
+    padding-left: 20px;
     justify-content: space-between;
     margin-left: $horizontal-margin-desktop-legend;
     margin-right: $horizontal-margin-desktop-legend;

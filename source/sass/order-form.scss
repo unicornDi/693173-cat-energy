@@ -107,6 +107,10 @@
     flex-direction: column;
   }
 
+  .order-form__title {
+    margin-left: 90px;
+  }
+
   .form-container--row {
     flex-direction: row;
   }
@@ -115,11 +119,21 @@
     width: 570px;
   }
 
+  .order-form__label {
+    margin-left: 40px;
+  }
+
   .order-form__legend {
     margin-left: $horizontal-margin-desktop-legend;
   }
-
+  .textarea-container {
+    margin-left: $horizontal-margin-desktop-legend;
+  }
   .order-form__button-wrapper {
     width: 60%;
+  }
+
+  .comment-textarea {
+    margin-left: 20px;
   }
 }
