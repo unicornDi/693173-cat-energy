@@ -12,17 +12,17 @@ var rename = require("gulp-rename");
 
 
 gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss")
-  .pipe(plumber())
-  .pipe(sass())
-  .pipe(postcss([
-  autoprefixer()
-  ]))
-  .pipe(gulp.dest("build/css"))
-  .pipe(csso())
-  .pipe(rename("style.min.css"))
-  .pipe(gulp.dest("build/css"));
-  });
+      return gulp.src("source/sass/style.scss")
+      .pipe(plumber())
+      .pipe(sass())
+      .pipe(postcss([
+      autoprefixer()
+      ]))
+      .pipe(gulp.dest("build/css"))
+      .pipe(csso())
+      .pipe(rename("style.min.css"))
+      .pipe(gulp.dest("build/css"));
+});
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
